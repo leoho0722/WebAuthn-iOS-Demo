@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="WebAuthn_iOS_Demo" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="9nd-2Z-0ot" id="RgH-4u-zSC"/>
+                <outlet property="logoutButton" destination="uX0-6g-fpI" id="3Nt-6R-nt3"/>
+                <outlet property="passwordlessButton" destination="Pz6-aY-BWe" id="0Ma-xE-903"/>
+                <outlet property="registerButton" destination="S5l-on-Zg9" id="Cp9-7y-lMt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uX0-6g-fpI">
+                    <rect key="frame" x="30" y="587" width="315" height="50"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Log Out">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="logOutBtnClicked:" destination="-1" eventType="touchUpInside" id="sWw-6t-lH0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5l-on-Zg9">
+                    <rect key="frame" x="30" y="30" width="315" height="50"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Register">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="registerBtnClicked:" destination="-1" eventType="touchUpInside" id="pjZ-Jf-ejO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pz6-aY-BWe">
+                    <rect key="frame" x="30" y="190" width="315" height="50"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Passwordless Login">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="passwordlessBtnClicked:" destination="-1" eventType="touchUpInside" id="YkC-Li-N6J"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nd-2Z-0ot">
+                    <rect key="frame" x="30" y="110" width="315" height="50"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Login">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="loginBtnClicked:" destination="-1" eventType="touchUpInside" id="8og-6T-vY6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="S5l-on-Zg9" secondAttribute="trailing" constant="30" id="0WH-D8-0Vg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uX0-6g-fpI" secondAttribute="bottom" constant="30" id="2AX-Xn-rf4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9nd-2Z-0ot" secondAttribute="trailing" constant="30" id="78F-0P-bSz"/>
+                <constraint firstItem="uX0-6g-fpI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="7Rb-sd-g4e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uX0-6g-fpI" secondAttribute="trailing" constant="30" id="GeL-6q-eu5"/>
+                <constraint firstItem="9nd-2Z-0ot" firstAttribute="top" secondItem="S5l-on-Zg9" secondAttribute="bottom" constant="30" id="NBr-wR-CVn"/>
+                <constraint firstItem="9nd-2Z-0ot" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Twn-JA-iTF"/>
+                <constraint firstItem="S5l-on-Zg9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="msa-C7-LVU"/>
+                <constraint firstItem="S5l-on-Zg9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="mzH-WX-d2G"/>
+                <constraint firstItem="Pz6-aY-BWe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="osa-pl-Lwx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Pz6-aY-BWe" secondAttribute="trailing" constant="30" id="ttU-cW-KEa"/>
+                <constraint firstItem="Pz6-aY-BWe" firstAttribute="top" secondItem="9nd-2Z-0ot" secondAttribute="bottom" constant="30" id="ynj-gm-m4E"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="102"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
