@@ -68,8 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				D00B56102844649600556979 /* Auth0 Support Files */,
-				D00B56092844631400556979 /* Model */,
-				D00B56082844630F00556979 /* View */,
+				D0968C3B2845AFEF00F224FC /* Model */,
+				D0968C3A2845AFE700F224FC /* View */,
 				D00B56072844630900556979 /* Controller */,
 				D00B55F3284462EC00556979 /* AppDelegate.swift */,
 				D00B55F5284462EC00556979 /* SceneDelegate.swift */,
@@ -90,26 +90,26 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		D00B56082844630F00556979 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D00B56092844631400556979 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		D00B56102844649600556979 /* Auth0 Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				D00B5611284464B400556979 /* Auth0.plist */,
 			);
 			path = "Auth0 Support Files";
+			sourceTree = "<group>";
+		};
+		D0968C3A2845AFE700F224FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0968C3B2845AFEF00F224FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D1D4240044BFDF04DB30A2E3 /* Frameworks */ = {
